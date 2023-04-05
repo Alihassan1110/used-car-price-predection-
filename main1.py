@@ -250,11 +250,7 @@ else:
     Car_Engine= '1600 CC'
 
 
-trained_model=pickle.load(open('trained_model_xgboost.sav','rb'))
 
-trained_model_scaler=pickle.load(open('scaler.sav','rb'))
-
-train_model_encoder= pickle.load(open('encoder.sav','rb'))
 
 
 Car_Transmission= st.selectbox("Select Type of Transmission",Transmission_options)
@@ -275,8 +271,13 @@ input_data = { 'Brand' :Brand_Selected,
               "Engine":Car_Engine,
               "Transmission" :Car_Transmission,
               "Gov":Car_Gov}
+
+trained_model=pickle.load(open('trained_model_xgboost.sav','rb'))
+trained_model_scaler=pickle.load(open('scaler.sav','rb'))
+trained_model_encoder= pickle.load(open('encoder.sav','rb'))
+
 x_x = pd.DataFrame.from_dict(input_data)
-x_x = train_model_encoder.transform(x_x)
+x_x = trained_model_encoder.transform(x_x)
 numerical_columns= ["Year"]
 x_x[numerical_columns] = trained_model_scaler.transform(x_x[numerical_columns])
 predection =trained_model.predict(x_x)
