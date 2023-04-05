@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import numpy as np
+#import numpy as np
 import requests
 import pickle
 from streamlit_lottie import st_lottie
