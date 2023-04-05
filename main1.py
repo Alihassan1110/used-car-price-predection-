@@ -11,7 +11,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 st.set_page_config(page_title="Cars Price Prediction",  layout="wide")
 
-df = pd.read_csv("E:\Epsilon AI\My_Projects\Final Project\Final\Cars.csv")
+df = pd.read_csv("./sources/Cars.csv")
 
 st.title('Cars Price Prediction :car: ')
 
