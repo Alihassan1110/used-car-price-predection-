@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-#import numpy as np
 import requests
 import pickle
 from streamlit_lottie import st_lottie
@@ -18,7 +17,7 @@ st.write("Price of used cars are not stable according to the current situation o
 st.write("Our dataset has 3 Brands: ")
 col11,col22,col33= st.columns(3)
 
-col11.image('Chevorlet.jpeg')
+col11.image('Chevorlet.jpg')
 col22.image('Hyundai.jpg')
 col33.image('Fiat.jpg')
 
