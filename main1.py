@@ -17,7 +17,7 @@ st.write("Price of used cars are not stable according to the current situation o
 st.write("Our dataset has 3 Brands: ")
 col11,col22,col33= st.columns(3)
 
-col11.image('Chevorlet.jpg')
+col11.image('Chevrolet.jpg')
 col22.image('Hyundai.jpg')
 col33.image('Fiat.jpg')
 
