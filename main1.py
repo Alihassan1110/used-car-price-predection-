@@ -278,7 +278,7 @@ x_x = train_model_encoder.transform(x_x)
 numerical_columns= ["Year"]
 x_x[numerical_columns] = trained_model_scaler.transform(x_x[numerical_columns])
 predection =trained_model.predict(x_x)
-#
+
 
 if st.button("Predict") :
     st.write("Price is " , round(predection[0]),'K')
