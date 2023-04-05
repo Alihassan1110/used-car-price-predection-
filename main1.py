@@ -5,8 +5,7 @@ import requests
 import pickle
 from streamlit_lottie import st_lottie
 import plotly.express as px
-import pandas_profiling
-from streamlit_pandas_profiling import st_profile_report
+
 
 
 st.set_page_config(page_title="Cars Price Prediction",  layout="wide")
