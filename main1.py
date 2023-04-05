@@ -11,7 +11,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 st.set_page_config(page_title="Cars Price Prediction",  layout="wide")
 
-df = pd.read_csv(r'F:\AI corse\ali strreaamlit\Cars.csv')
+df = pd.read_csv(r'./sources/Cars.csv')
 
 st.title('Cars Price Prediction :car: ')
 
