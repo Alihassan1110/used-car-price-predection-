@@ -257,7 +257,7 @@ Car_Transmission= st.selectbox("Select Type of Transmission",Transmission_option
 
 Car_Gov= st.selectbox("Select Gov",Gov_options)
 
-trained_model=pickle.load(open('trained_model_rf.sav','rb'))
+trained_model=pickle.load(open('trained_model_xgboost.sav','rb'))
 
 trained_model_scaler=pickle.load(open('scaler.sav','rb'))
 
