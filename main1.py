@@ -274,6 +274,7 @@ input_data = { 'Brand' :Brand_Selected,
 
 trained_model=pickle.load(open('trained_model_xgboost.sav','rb'))
 trained_model_scaler=pickle.load(open('scaler.sav','rb'))
+trained_model_encoder= pickle.load(open('encoder.sav','rb'))
 
 
 x_x = pd.DataFrame.from_dict(input_data)
