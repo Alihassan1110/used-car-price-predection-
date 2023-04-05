@@ -250,16 +250,18 @@ else:
     Car_Engine= '1600 CC'
 
 
-
-Car_Transmission= st.selectbox("Select Type of Transmission",Transmission_options)
-
-Car_Gov= st.selectbox("Select Gov",Gov_options)
-
 trained_model=pickle.load(open('trained_model_xgboost.sav','rb'))
 
 trained_model_scaler=pickle.load(open('scaler.sav','rb'))
 
 train_model_encoder= pickle.load(open('encoder.sav','rb'))
+
+
+Car_Transmission= st.selectbox("Select Type of Transmission",Transmission_options)
+
+Car_Gov= st.selectbox("Select Gov",Gov_options)
+
+
 
 
 input_data = {}
